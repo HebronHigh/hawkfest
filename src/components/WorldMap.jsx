@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { select, geoPath, geoMercator, min, max, scaleLinear, color} from "d3";
+import { select, geoPath, geoMercator, color} from "d3";
 import useResizeObserver from "./useResizeObserver";
 
 /**
@@ -10,13 +10,13 @@ function WorldMap({ data, property }) {
   const svgRef = useRef();
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
-  const [selectedCountry, setSelectedCountry] = useState(null);
-
-  const colorArr = [color("red"), color("blue"), color("green"), color("yellow"), color("pink")]
+  const [selectedRegion, setSelectedRegion] = useState(null);
 
   // will be called initially and on every data change
   useEffect(() => {
     const svg = select(svgRef.current);
+
+    const colorArr = [color("red"), color("blue"), color("green"), color("yellow"), color("pink")]
 
     const colorScale = (d) => {
       return colorArr[d]
@@ -29,7 +29,7 @@ function WorldMap({ data, property }) {
 
     // projects geo-coordinates on a 2D plane
     const projection = geoMercator()
-      .fitSize([width, height], data)
+      .fitSize([width, height], selectedRegion || data)
       .precision(100);
 
     // takes geojson data,
@@ -42,9 +42,13 @@ function WorldMap({ data, property }) {
       .data(data.features)
       .join("path")
       .attr("class", "country")
+      .on("click", (e, feature) => {
+        setSelectedRegion(feature === selectedRegion ? null : feature)
+      })
+      .transition().duration(1000)
       .attr("fill", feature => colorScale(feature.properties[property]))
       .attr("d", feature => pathGenerator(feature));
-  }, [data, dimensions, property, selectedCountry]);
+  }, [data, dimensions, property, selectedRegion]);
 
   return (
     <div ref={wrapperRef} style={{ marginBottom: "2rem" }}>

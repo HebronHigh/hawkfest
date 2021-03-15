@@ -7,6 +7,7 @@ function App() {
   const [property, setProperty] = useState("REGION")
   return (
     <React.Fragment>
+      <h2>hawk fest</h2>
       <WorldMap data={ data } property={ property }/>
     </React.Fragment>
   );
