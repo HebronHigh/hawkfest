@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { select, geoPath, geoMercator, color} from "d3";
+import { select, geoPath, color, geoNaturalEarth1} from "d3";
 import useResizeObserver from "./useResizeObserver";
 
 /**
@@ -28,7 +28,7 @@ function WorldMap({ data, property }) {
       dimensions || wrapperRef.current.getBoundingClientRect();
 
     // projects geo-coordinates on a 2D plane
-    const projection = geoMercator()
+    const projection = geoNaturalEarth1()
       .fitSize([width, height], selectedRegion || data)
       .precision(100);
 

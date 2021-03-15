@@ -4,11 +4,10 @@ import data from './data/world.geo.json'
 import "./App.css";
 
 function App() {
-  const [property, setProperty] = useState("REGION")
   return (
     <React.Fragment>
       <h2>hawk fest</h2>
-      <WorldMap data={ data } property={ property }/>
+      <WorldMap data={ data } property={ "REGION" }/>
     </React.Fragment>
   );
 }
