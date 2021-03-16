@@ -11,6 +11,7 @@ function WorldMap({ data, property }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   const [selectedRegion, setSelectedRegion] = useState(null);
+  console.log(selectedRegion)
 
   // will be called initially and on every data change
   useEffect(() => {
