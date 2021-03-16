@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { select, geoPath, color, geoNaturalEarth1} from "d3";
 import useResizeObserver from "./useResizeObserver";
+import { tooltip } from "leaflet";
 
 /**
  * Component that renders a map of Germany.
@@ -11,11 +12,14 @@ function WorldMap({ data, property }) {
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
   const [selectedRegion, setSelectedRegion] = useState(null);
-  console.log(selectedRegion)
 
   // will be called initially and on every data change
   useEffect(() => {
     const svg = select(svgRef.current);
+    const div = select("body")
+      .append("div")
+      .attr("class", "tooltip-donut")
+      .style("opacity", 0);
 
     const colorArr = [color("red"), color("blue"), color("green"), color("yellow"), color("pink")]
 
@@ -36,7 +40,6 @@ function WorldMap({ data, property }) {
     // takes geojson data,
     // transforms that into the d attribute of a path element
     const pathGenerator = geoPath(projection)
-
     // render each country
     svg
       .selectAll(".country")
