@@ -1,14 +1,14 @@
-import React from "react";
-import WorldMap from "./components/WorldMap";
-import countrydata from './data/world.geo.json'
-import "./App.css";
+import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom'
+import Map from './components/Map'
 
 function App() {
   return (
-    <React.Fragment>
-      <h2>hawk fest</h2>
-      <WorldMap data={ countrydata } property={ "region" }/>
-    </React.Fragment>
+    <BrowserRouter>
+      <Map />
+      <Route exact path='/pages/Lesotho/General%20Info.html' render={() => { window.location.href = "/pages/Lesotho/General%20Info.html" }} />
+    </BrowserRouter>
+
   );
 }
 
