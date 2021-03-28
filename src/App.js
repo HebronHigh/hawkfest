@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Map />
-      <Route exact path='/pages/Lesotho/General%20Info.html' render={() => { window.location.href = "/pages/Lesotho/General%20Info.html" }} />
+      <Route exact path='/hawkfest2021/pages/Lesotho/General%20Info.html' render={() => { window.location.href = "/hawkfest2021/pages/Lesotho/General%20Info.html" }} />
     </BrowserRouter>
 
   );

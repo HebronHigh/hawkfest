@@ -81,7 +81,7 @@ class Map extends Component {
 
   onEachCountry = (country, layer) => {
     layer.bindPopup(function () {
-      const url = "/pages/" + country.properties.ADMIN + "/General%20Info.html"
+      const url = "/hawkfest2021/pages/" + country.properties.ADMIN + "/General%20Info.html"
       return country.properties.ADMIN + "<br /><a href=" + url + ">View More</a>";
     })
 
