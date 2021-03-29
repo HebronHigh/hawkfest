@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/hawkfest/static/css/main.6274db50.chunk.css",
-    "main.js": "/hawkfest/static/js/main.0bfd3b4d.chunk.js",
-    "main.js.map": "/hawkfest/static/js/main.0bfd3b4d.chunk.js.map",
+    "main.js": "/hawkfest/static/js/main.1768a79d.chunk.js",
+    "main.js.map": "/hawkfest/static/js/main.1768a79d.chunk.js.map",
     "runtime-main.js": "/hawkfest/static/js/runtime-main.abe48282.js",
     "runtime-main.js.map": "/hawkfest/static/js/runtime-main.abe48282.js.map",
     "static/css/2.b4ebbe46.chunk.css": "/hawkfest/static/css/2.b4ebbe46.chunk.css",
-    "static/js/2.321b9fea.chunk.js": "/hawkfest/static/js/2.321b9fea.chunk.js",
-    "static/js/2.321b9fea.chunk.js.map": "/hawkfest/static/js/2.321b9fea.chunk.js.map",
+    "static/js/2.5f5b4f73.chunk.js": "/hawkfest/static/js/2.5f5b4f73.chunk.js",
+    "static/js/2.5f5b4f73.chunk.js.map": "/hawkfest/static/js/2.5f5b4f73.chunk.js.map",
     "index.html": "/hawkfest/index.html",
     "static/css/2.b4ebbe46.chunk.css.map": "/hawkfest/static/css/2.b4ebbe46.chunk.css.map",
     "static/css/main.6274db50.chunk.css.map": "/hawkfest/static/css/main.6274db50.chunk.css.map",
-    "static/js/2.321b9fea.chunk.js.LICENSE.txt": "/hawkfest/static/js/2.321b9fea.chunk.js.LICENSE.txt"
+    "static/js/2.5f5b4f73.chunk.js.LICENSE.txt": "/hawkfest/static/js/2.5f5b4f73.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.abe48282.js",
     "static/css/2.b4ebbe46.chunk.css",
-    "static/js/2.321b9fea.chunk.js",
+    "static/js/2.5f5b4f73.chunk.js",
     "static/css/main.6274db50.chunk.css",
-    "static/js/main.0bfd3b4d.chunk.js"
+    "static/js/main.1768a79d.chunk.js"
   ]
 }
