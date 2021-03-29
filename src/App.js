@@ -9,8 +9,8 @@ function App() {
   const history = createBrowserHistory();
   history.listen(location => {
     ReactGA.initialize('UA-193267831-1');
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname);
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
   })
   return (
     <BrowserRouter history={history}>
