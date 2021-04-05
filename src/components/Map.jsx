@@ -9,11 +9,10 @@ import { latLng, latLngBounds } from 'leaflet';
   REGION NUMBERS GUIDE:
   0: Southwest Asia & Northern Africa
   1: Sub-Saharan Africa & Australia
-  2: Monsoon Asia
+  2: Not Monsoon Asia
   3: Europe & Russia
   4: Western Hemisphere
 */
-
 
 /**
  * Highlights a layer that was hovered over in the map
@@ -26,8 +25,9 @@ function highlight(e) {
   const layer = e.target;
   console.log(layer)
   layer.setStyle({
-    color: '#ff007f',
-    fillColor: '#ff007f'
+    color: 'black',
+    fillOpacity: .8,
+    weight: 3,
   })
   layer.bringToFront();
 }
@@ -44,7 +44,8 @@ function resetHighlight(e) {
   layer.setStyle({
     weight: 1,
     color: 'black',
-    fillColor: getColors(layer.feature)
+    fillColor: getColors(layer.feature),
+    fillOpacity: .5
   })
 }
 
@@ -64,7 +65,7 @@ function getColors(feature) {
     case 1: return 'red';
     case 2: return 'green';
     case 3: return 'aqua';
-    case 4: return 'blue';
+    case 4: return '#0037ff';
     default: return 'black';
   }
 }
@@ -76,7 +77,7 @@ function getColors(feature) {
  */
 class Map extends Component {
   componentDidMount() {
-    console.log(data)
+    //console.log(data)
   }
 
   onEachCountry = (country, layer) => {
@@ -93,30 +94,31 @@ class Map extends Component {
 
   render() {
     return (
-      <div>
-      <h1> My Map</h1>
-        <MapContainer style={{ height: "90vh" }} minZoom={2} maxZoom={7} zoom={2} center={[12.345, 12.345]} maxBounds={latLngBounds(latLng(-90,-200),latLng(90,200))} maxBoundsViscosity={1.0}>
-          <TileLayer
-            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
+      <>
+        <div>
+         <MapContainer style={{ height: "87vh" }} minZoom={2} maxZoom={7} zoom={2} center={[12.345, 12.345]} maxBounds={latLngBounds(latLng(-90,-200),latLng(90,200))} maxBoundsViscosity={1.0}>
+            <TileLayer
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
 
-          <GeoJSON
-            style={
-              function (feature) {
-                return {
-                  fillColor: getColors(feature),
-                  weight: 1,
-                  fillOpacity: .4,
-                  color: 'black'
+            <GeoJSON
+              style={
+                function (feature) {
+                  return {
+                    fillColor: getColors(feature),
+                    weight: 1,
+                    fillOpacity: .5,
+                    color: 'black'
+                  }
                 }
               }
-            }
-            data={data.features}
-            onEachFeature={this.onEachCountry}
-          />
-        </MapContainer>
-        </div>
+              data={data.features}
+              onEachFeature={this.onEachCountry}
+            />
+          </MapContainer>
+          </div>
+        </>
     )
   }
 }

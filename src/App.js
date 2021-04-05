@@ -1,24 +1,30 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
 import Map from './components/Map'
-import { useEffect } from 'react'
-import ReactGA from 'react-ga'
-import { createBrowserHistory } from 'history';
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga';
+import Navbar from './components/Navbar'
+import About from './components/About'
+import Contact from './components/Contact'
+import Credit from './components/Credit'
 
-function App() {
-  const history = createBrowserHistory();
-  history.listen(location => {
-    ReactGA.initialize('UA-193267831-1');
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-  })
+ReactGA.initialize('UA-193267831-1')
+
+export default function App() {
   return (
-    <BrowserRouter history={history}>
-      <Map />
-      <Route exact path='/hawkfest/pages/Lesotho/General%20Info.html' render={() => { window.location.href = "/hawkfest/pages/Lesotho/General%20Info.html" }} />
-    </BrowserRouter>
-
+    <>
+      <BrowserRouter>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route exact path='/hawkfest' component={Map} />
+            <Route exact path='/hawkfest/about' component={About} />
+            <Route exact path='/hawkfest/contact' component={Contact} />
+            <Route exact path='/hawkfest/credit' component={Credit} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
-export default App;

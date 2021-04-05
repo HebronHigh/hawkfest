@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Ultrathins';
+  src: local('Ultrathins'), url(./fonts/Ultrathins.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'leaves_and_ground';
+  src: local('leaves_and_ground'), url(./fonts/leaves_and_ground.ttf) format('truetype');
+}

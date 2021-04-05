@@ -1,0 +1,41 @@
+span {
+  font-size: 40px;
+  color:white;
+}
+.container {
+  background-color:#21255a;
+  height:8vh;
+  font-size:4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-left {
+  font-family: leaves_and_ground;
+  flex: 1;
+  align-items: flex-start;
+  margin-left: 5vh;
+}
+.child-right {
+  font-family:Ultrathins;
+  color: white;
+  align-items: flex-end;
+  margin-right: 5vh;
+}
+
+.selected {
+  color: white;
+}
+
+.nav_link {
+  font-weight: bold;
+  text-decoration: none;
+  color:white;
+}
+.nav_link:hover {
+  color: gray;
+}
+.nav_link:active{
+  color:gray;
+}

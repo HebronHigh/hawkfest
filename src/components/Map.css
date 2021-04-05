@@ -1,10 +1,29 @@
 body {
-  background-color: rgb(178, 210, 222);
+  background-color: #21255a;
+
+  /*0d1e5c*/
+  color: #white;
 }
 .leaflet-container {
   background-color: rgb(178, 210, 222);
 }
 
-.a:hover {
-  background-color: green;
+img {
+  vertical-align: middle;
+}
+h1 {
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  clear: left;
+}
+.header {
+  text-align: center;
+  padding: 5px;
+  background: #0d1e5c;
+  color: white;
+  font-size: 15px;
+}
+* {
+  box-sizing: border-box;
 }
