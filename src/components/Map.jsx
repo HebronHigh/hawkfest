@@ -23,9 +23,7 @@ import { latLng, latLngBounds } from 'leaflet';
  */
 function highlight(e) {
   const layer = e.target;
-  console.log(layer)
   layer.setStyle({
-    color: 'black',
     fillOpacity: .8,
     weight: 3,
   })
@@ -43,7 +41,6 @@ function resetHighlight(e) {
   const layer = e.target;
   layer.setStyle({
     weight: 1,
-    color: 'black',
     fillColor: getColors(layer.feature),
     fillOpacity: .5
   })
@@ -61,14 +58,15 @@ function resetHighlight(e) {
 function getColors(feature) {
   const regionNumber = feature.properties.REGION;
   switch (regionNumber) {
-    case 0: return 'yellow';
-    case 1: return 'red';
-    case 2: return 'green';
-    case 3: return 'aqua';
-    case 4: return '#0037ff';
+    case 0: return '#ffff00';
+    case 1: return '#ff0000';
+    case 2: return '#00ff00';
+    case 3: return '#00ffff';
+    case 4: return '#0000ff';
     default: return 'black';
   }
 }
+
 
 /**
  * Class for Map component
