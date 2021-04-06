@@ -1,25 +1,33 @@
-.creditsContainer {
-  justify-content: center;
+.creditPage {
 }
 
+.creditsContainer {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
 .contributor {
-  margin-left: 37.5vw;
-  margin-bottom: 20px;
   text-align: center;
-  border: 1px solid white;
-  border-radius: 1vw;
-  width: 25vw;
+  width:33vw;
 }
 
 a {
-  color: white;
+  color: #21255a;
 }
 
 a:hover {
-  color: grey;
+  color: #5A5621;
 }
 
 h1 {
-  color: white;
+  color: #fff;
   text-align: center;
+  text-decoration: underline;
+  font-size: 7vh;
+}
+
+.header {
+  margin-top: -45px;
+  background-color: #21255a;
+  height: 12vh;
 }
