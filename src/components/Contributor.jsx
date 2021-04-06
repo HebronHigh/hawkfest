@@ -1,12 +1,17 @@
 import React from 'react';
 import InfoLink from './InfoLink'
 import TextInfo from './TextInfo'
+import PortraitImage from './PortraitImage'
 import './Contributor.css'
 
 const Contributor = (props) => {
   return (
     <div className = 'contribContainer'>
-      <div className='userinfo'>
+      <div className='photo'>
+        <PortraitImage location={props.imageSource} />
+      </div>
+
+      <div className='info'>
         <div className='userinfo-name'>
           {props.name}
         </div>
@@ -21,8 +26,8 @@ const Contributor = (props) => {
           <InfoLink type='github' user={props.githubName} />
           <InfoLink type='linkedin' user={props.linkedinName} />
           <InfoLink type='instagram' user={props.instagramName} />
+          </div>
         </div>
-      </div>
     </div>
   )
 }

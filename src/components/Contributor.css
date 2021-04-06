@@ -1,12 +1,26 @@
 .contribContainer {
-  color: white;
-  font-size:25px;
+  color: #21255a;
+  font-size:30px;
 }
 
 .userinfo-name {
   vertical-align: bottom;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.textinfo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.info {
 }
 
 .infolinks {
   margin-top: 7px;
+}
+
+.photo {
+  border-radius: 50%;
 }

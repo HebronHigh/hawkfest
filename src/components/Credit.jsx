@@ -3,16 +3,17 @@ import Contributor from './Contributor'
 import './Credit.css'
 const Credit = () => {
   return (
-    <>
-      <h1> Credit </h1>
+    <div className='creditPage'>
+      <div className='header'><h1> CREDIT </h1></div>
       <div className='creditsContainer'>
           <div className='contributor'>
             <Contributor
               name='Ethan Maher'
+              imageSource='/img/saitama.jpg'
               githubName='randompwner'
               linkedinName='ethan-maher'
               personalemail='ethanamaher'
-              personalservice='lisd'
+              personalservice='google'
               workemail='eam200004'
               workservice='utdallas'
             />
@@ -20,7 +21,8 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-              name='Matthew Sheldon'
+            name='Matthew Sheldon'
+            imageSource='/img/saitama.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
               phonenumber='469-430-7144'
@@ -33,13 +35,15 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-              name='Tyler Kerch'
+            name='Tyler Kerch'
+            imageSource='/img/saitama.jpg'
             />
           </div>
 
           <div className='contributor'>
             <Contributor
-              name='Janine Jimenez'
+            name='Janine Jimenez'
+            imageSource='/img/saitama.jpg'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
               workemail='jimenezj2'
@@ -49,7 +53,8 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-              name='Rayyan Waris'
+            name='Rayyan Waris'
+            imageSource='/img/saitama.jpg'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
               workemail='warisr'
@@ -59,12 +64,13 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-              name='Sanjitha Venkata'
+            name='Sanjitha Venkata'
+            imageSource='/img/saitama.jpg'
             />
           </div>
 
       </div>
-    </>
+    </div>
   )
 };
 
