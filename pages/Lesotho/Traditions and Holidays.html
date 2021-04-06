@@ -13,8 +13,16 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+        /* Changes the font of the page */
+        @font-face {
+            font-family: 'LeavesAndGround';
+            src: url('Fonts/LeavesAndGround.woff2') format('woff2'),
+                url('Fonts/LeavesAndGround.woff') format('woff'),
+                url('Fonts/LeavesAndGround.ttf') format('truetype'),
+                url('Fonts/LeavesAndGround.svg#LeavesAndGround') format('svg');
+            font-weight: lighter;
+            font-style: normal;
+            font-display: swap;
         }
 
         /* Style the header */
@@ -41,26 +49,34 @@
             text-align: center;
             width: 30%;
             height: 85vh;
-            background: #ccc;
+            background: #718ef5;
         }
 
         /* Styling for the buttons */
         a {
-
-            background-color: rgb(182, 182, 182);
+            background-color: #222e99;
             text-align: center;
             display: block;
-            color: black;
+            color: white;
             box-sizing: border-box;
-            border: solid rgb(168, 168, 168) 1vmin;
-            font-size: 3vmin;
-            margin-bottom: 9vmin;
+            border: solid #22255a 0.5vmin;
+            font-size: 4vmin;
+            margin-bottom: 6vmin;
+            text-decoration: none;
         }
 
         /* Changes to the buttons when hovering over */
         a:hover {
-            background-color: rgb(168, 168, 168);
+            background-color: #22255a;
             cursor: pointer;
+        }
+
+        a img {
+            display: block;
+            font-size: 3vmin;
+            width: 10vmin;
+            height: auto;
+            text-align: center;
         }
 
         /* Style the list inside the menu */
@@ -72,6 +88,7 @@
         /* This is the style for the article section where most 
             of the content for a given country will be located */
         article {
+            font-family: Arial, Helvetica, sans-serif;
             background-color: #f1f1f1;
             float: left;
             padding: 10px;
@@ -102,8 +119,8 @@
 
         /* Style the footer */
         footer {
-            background-color: #2654A1;
-            font-size: 3vmin;
+            background-color: #22255a;
+            font-size: 5vmin;
             text-align: center;
             color: white;
             height: 5vh;
@@ -113,16 +130,17 @@
 </head>
 
 <!-- This is the main content of the page -->
-<body>
+<body style="font-family: 'LeavesAndGround'; font-weight: normal; font-style: normal;">
     <!-- 
         This is the Name of the country 
         (and maybe the logo with a globe that takes you back to the landing site)
     -->
     <header>
+        
         <h2>
-            <img src="General Info/LesothoFlag.png" alt="LesothoFlag.png">
+            <img src="General Info/LesothoFlag.png" alt="LesothoFlag">
             Lesotho
-            <img src="General Info/LesothoFlag.png" alt="LesothoFlag.png">
+            <img src="General Info/LesothoFlag.png" alt="LesothoFlag">
         </h2>
     </header>
 
@@ -134,6 +152,10 @@
         <!-- This is the segment with the naviagation between information for a given country -->
         <nav>
             <ul>
+                <a href="https://hebronhigh.github.io/hawkfest/">
+                    <img alt="Home" src="WhiteOutlineLogo.png">
+                    Home
+                </a>
                 <a href="General Info.html">General Info</a>
                 <a href="Traditions and Holidays.html">Traditions and Holidays</a>
                 <a href="Music.html">Music</a>
