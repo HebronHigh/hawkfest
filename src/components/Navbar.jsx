@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
-import logo from '../assets/smallLogo.png'
+import logo from '../assets/WhiteOutlineLogo.png'
 
 const Navbar = () => {
   return (
@@ -9,8 +9,8 @@ const Navbar = () => {
     <div className='child-left'>
         <NavLink to='/hawkfest' className='nav_link'>
           <a href='/hawkfest'>
-            <img src={logo} alt=''></img>
-          </a>
+            <img src={logo} width='65vw' height='50vh' alt=''></img>
+            </a>
         </NavLink>
         <span>Hawkfest 2021</span>
     </div>

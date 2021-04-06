@@ -20,6 +20,7 @@ const Credit = () => {
               name='Matthew Sheldon'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
+              phonenumber='469-430-7144'
               personalemail='punchwood2003'
               workemail='matthewtsheldon'
             />

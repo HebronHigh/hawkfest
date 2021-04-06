@@ -21,6 +21,11 @@ const TextInfo = (props) => {
       return (
         <div className='item'>Work Email: <a href={mailto}>{email}</a></div>
       )
+    } else if (props.type === 'phonenumber') {
+      const phone = props.user
+      return (
+        <div className='item'>Phone Number: {phone}</div>
+      )
     }
   } else {
     return null;

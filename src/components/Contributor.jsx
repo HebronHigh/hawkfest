@@ -12,6 +12,7 @@ const Contributor = (props) => {
         </div>
 
         <div className='textinfo'>
+          <TextInfo type='phonenumber' user={props.phonenumber} />
           <TextInfo type='personalemail' user={props.personalemail} />
           <TextInfo type='workemail' user={props.workemail} />
           <TextInfo type='schoolemail' user={props.schoolemail} />
