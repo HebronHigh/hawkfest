@@ -13,13 +13,13 @@ const TextInfo = (props) => {
       const email = props.user + '@gmail.com'
       const mailto = 'mailto:' + email
       return (
-        <div className='item'>Work Email: <a href={mailto}>{email}</a></div>
+        <div className='item'>Business Email: <a href={mailto}>{email}</a></div>
       )
     } else if (props.type === 'schoolemail') {
       const email = props.user + '@go.lisd.net'
       const mailto = 'mailto:' + email
       return (
-        <div className='item'>Work Email: <a href={mailto}>{email}</a></div>
+        <div className='item'>School Email: <a href={mailto}>{email}</a></div>
       )
     } else if (props.type === 'phonenumber') {
       const phone = props.user

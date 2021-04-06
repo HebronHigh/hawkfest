@@ -1,10 +1,14 @@
 .creditsContainer {
-
+  justify-content: center;
 }
 
 .contributor {
-  margin-bottom: 40px;
+  margin-left: 37.5vw;
+  margin-bottom: 20px;
   text-align: center;
+  border: 1px solid white;
+  border-radius: 1vw;
+  width: 25vw;
 }
 
 a {
