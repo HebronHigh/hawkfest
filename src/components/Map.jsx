@@ -22,6 +22,8 @@ import { latLng, latLngBounds } from 'leaflet';
  * @author Ethan Maher
  */
 function highlight(e) {
+  const HAS_MEDIA = e.target.feature.properties.HAS_MEDIA;
+  console.log(HAS_MEDIA);
   const layer = e.target;
   layer.setStyle({
     fillOpacity: .8,
@@ -63,7 +65,7 @@ function getColors(feature) {
     case 2: return '#00ff00';
     case 3: return '#00ffff';
     case 4: return '#0000ff';
-    default: return 'black';
+    default: return '#000000';
   }
 }
 

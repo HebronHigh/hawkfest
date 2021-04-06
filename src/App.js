@@ -1,7 +1,7 @@
 import './App.css';
-import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Map from './components/Map'
-import React, { useEffect } from 'react'
+import React from 'react'
 import ReactGA from 'react-ga';
 import Navbar from './components/Navbar'
 import About from './components/About'

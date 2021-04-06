@@ -1,29 +1,8 @@
 body {
   background-color: #21255a;
-
-  /*0d1e5c*/
-  color: #white;
+  color: white;
+  text-align: center;
 }
 .leaflet-container {
   background-color: rgb(178, 210, 222);
-}
-
-img {
-  vertical-align: middle;
-}
-h1 {
-  vertical-align: middle;
-  color: white;
-  text-align: center;
-  clear: left;
-}
-.header {
-  text-align: center;
-  padding: 5px;
-  background: #0d1e5c;
-  color: white;
-  font-size: 15px;
-}
-* {
-  box-sizing: border-box;
 }

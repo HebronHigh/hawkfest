@@ -1,0 +1,12 @@
+.item {
+  color: white;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}

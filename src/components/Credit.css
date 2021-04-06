@@ -1,0 +1,21 @@
+.creditsContainer {
+
+}
+
+.contributor {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
