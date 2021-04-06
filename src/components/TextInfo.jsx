@@ -3,23 +3,39 @@ import './TextInfo.css'
 
 const TextInfo = (props) => {
   if (typeof (props.user) !== 'undefined') {
+
+
     if (props.type === 'personalemail') {
-      const email = props.user + '@gmail.com'
+      const user = props.user;
+      const service = props.service;
+      let email = ''
+      if (service === 'google') {
+        email = user + '@gmail.com';
+      } else if (service === 'lisd') {
+        email = user + '@go.lisd.net';
+      } else if (service === 'utdallas') {
+        email = user + '@utdallas.edu';
+      }
       const mailto = 'mailto:' + email
       return (
         <div className='item'>Personal Email: <a href={mailto}>{email}</a></div>
       )
     } else if (props.type === 'workemail') {
-      const email = props.user + '@gmail.com'
+      const user = props.user;
+      const service = props.service;
+      let email = '';
+
+      if (service === 'google') {
+        email = user + '@gmail.com';
+      } else if (service === 'lisd') {
+        email = user + '@go.lisd.net';
+      } else if (service === 'utdallas') {
+        email = user + '@utdallas.edu';
+      }
+
       const mailto = 'mailto:' + email
       return (
         <div className='item'>Business Email: <a href={mailto}>{email}</a></div>
-      )
-    } else if (props.type === 'schoolemail') {
-      const email = props.user + '@go.lisd.net'
-      const mailto = 'mailto:' + email
-      return (
-        <div className='item'>School Email: <a href={mailto}>{email}</a></div>
       )
     } else if (props.type === 'phonenumber') {
       const phone = props.user

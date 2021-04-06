@@ -12,6 +12,9 @@ const Credit = () => {
               githubName='randompwner'
               linkedinName='ethan-maher'
               personalemail='ethanamaher'
+              personalservice='lisd'
+              workemail='eam200004'
+              workservice='utdallas'
             />
           </div>
 
@@ -22,7 +25,9 @@ const Credit = () => {
               linkedinName='matthew-sheldon-280812200'
               phonenumber='469-430-7144'
               personalemail='punchwood2003'
+              personalservice='google'
               workemail='matthewtsheldon'
+              workservice='google'
             />
           </div>
 
@@ -37,7 +42,8 @@ const Credit = () => {
               name='Janine Jimenez'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
-              schoolemail='jimenezj2'
+              workemail='jimenezj2'
+              workservice='lisd'
             />
           </div>
 
@@ -46,7 +52,8 @@ const Credit = () => {
               name='Rayyan Waris'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
-              schoolemail='warisr'
+              workemail='warisr'
+              workservice='lisd'
             />
           </div>
 
