@@ -9,10 +9,10 @@ const Navbar = () => {
     <div className='child-left'>
         <NavLink to='/hawkfest' className='nav_link_img'>
           <a href='/hawkfest'>
-            <img src={logo} width='65vw' height='50vh' alt=''></img>
-            </a>
+            <img src={logo} width='65vh' height='50vh' alt=''></img>
+          </a>
         </NavLink>
-        <span>Hawkfest 2021</span>
+        <span>HawkFest2021</span>
     </div>
       <div className='child-right'>
         <NavLink to='/hawkfest' className='nav_link' activeClassName='selected'> Map </NavLink>

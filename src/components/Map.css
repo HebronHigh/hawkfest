@@ -5,3 +5,30 @@ body {
 .leaflet-container {
   background-color: rgb(178, 210, 222);
 }
+
+p {
+  text-align: center;
+  font-size: 2vmin;
+}
+
+.custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+  text-align: center;
+  font-size: 14px;
+}
+
+#viewmorebutton{
+  background-color: #21255a;
+  color: white;
+  padding: .66em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#viewmorebutton:hover {
+  color: gray;
+}
+
+#viewmorebutton:active {
+  color: gray;
+}

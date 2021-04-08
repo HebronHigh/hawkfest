@@ -1,27 +1,26 @@
 span {
-  font-size: 8vh;
   color:white;
+  font-size: 8vmin;
 }
+
 .container {
   background-color:#21255a;
-  height:100px;
-  font-size:4vh;
+  height:10vmin;
   display: flex;
   align-items: center;
-  vertical-align: middle;
 }
 
 .child-left {
-  text-align: left;
   font-family: leaves_and_ground;
   flex: 1;
-  align-items: flex-start;
   margin-left: 5vh;
+  text-align: left;
+  font-size:8vmin;
 }
 .child-right {
   font-family:Ultrathins;
-  align-items: flex-end;
-  margin-right: 5vh;
+  margin-right: 5vw;
+  font-size:4vmin;
 }
 
 .selected {
@@ -32,14 +31,14 @@ span {
   font-weight: bold;
   text-decoration: none;
   color:white;
-  margin-left: 50px;
+  margin-left: 4vw;
 }
 
 .nav_link_img {
   font-weight: bold;
   text-decoration: none;
   color:white;
-  margin-right: 20px;
+  margin-right: 1vw;
 }
 .nav_link:hover {
   color: gray;

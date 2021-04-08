@@ -76,15 +76,18 @@ function getColors(feature) {
  * @author Ethan Maher
  */
 class Map extends Component {
-  componentDidMount() {
-    //console.log(data)
-  }
-
   onEachCountry = (country, layer) => {
-    layer.bindPopup(function () {
-      const url = "/hawkfest/pages/" + country.properties.ADMIN + "/General%20Info.html"
-      return country.properties.ADMIN + "<br /><a href=" + url + ">View More</a>";
-    })
+
+    if (country.properties.HASDATA === 1) {
+      layer.bindPopup(function () {
+        const url = "/hawkfest/pages/" + country.properties.ADMIN + "/General%20Info.html"
+        return "<p>" + country.properties.ADMIN + "</p><a href=" + url + " id='viewmorebutton'>View Country Page</a>";
+      })
+    } else {
+      layer.bindPopup(function () {
+        return "<p>" + country.properties.ADMIN + "</p>";
+      })
+    }
 
     layer.on({
       mouseover: highlight,
@@ -94,9 +97,8 @@ class Map extends Component {
 
   render() {
     return (
-      <>
         <div>
-         <MapContainer style={{ height: "87vh" }} minZoom={2} maxZoom={7} zoom={2} center={[12.345, 12.345]} maxBounds={latLngBounds(latLng(-90,-200),latLng(90,200))} maxBoundsViscosity={1.0}>
+         <MapContainer style={{ height: "90vh" }} minZoom={2} maxZoom={7} zoom={2} center={[12.345, 12.345]} maxBounds={latLngBounds(latLng(-90,-200),latLng(90,200))} maxBoundsViscosity={1.0}>
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -117,8 +119,7 @@ class Map extends Component {
               onEachFeature={this.onEachCountry}
             />
           </MapContainer>
-          </div>
-        </>
+        </div>
     )
   }
 }
