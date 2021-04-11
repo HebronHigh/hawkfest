@@ -1,6 +1,6 @@
 import React from 'react';
 import './InfoLink.css'
-import { Github, Instagram, Linkedin } from 'react-bootstrap-icons'
+import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
 
 /**
  * InfoLink functional component for the Credit Page
@@ -40,6 +40,20 @@ const InfoLink = (props) => {
       return (
         <a href={link} target='_blank' rel='noreferrer'>
           <Linkedin width='40px' size={30} />
+        </a>
+      )
+    }
+    /**
+     * checks if the proptype is a website
+     *
+     * if so it will create a link to that webpage
+     */
+    else if (props.type === 'website') {
+      const link = props.user;
+
+      return (
+        <a href={link} target='_blank' rel='noreferrer'>
+          <Globe2 width='40px' size={30} />
         </a>
       )
     }

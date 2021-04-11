@@ -22,31 +22,14 @@ const TextInfo = (props) => {
      */
     if (props.type === 'personalemail') {
       const user = props.user;
-      const service = props.service;
-      let email = ''
 
-      /**
-       * to add a service add a new case for that provider
-       *
-       * defaults to an {@gmail.com} extension if one is not given
-       */
-      switch (service) {
-        case 'google':
-          email = user + '@gmail.com'; break;
-        case 'lisd':
-          email = user + '@go.lisd.net'; break;
-        case 'utdallas':
-          email = user + '@utdallas.edu'; break;
-        default:
-          email = user + '@gmail.com';
-      }
 
       /**
        * creates and returns a mailto: href with the email
        */
-      const mailto = 'mailto:' + email
+      const mailto = 'mailto:' + user
       return (
-        <div className='item'>Personal Email: <a href={mailto}>{email}</a></div>
+        <div className='item'>Personal Email: <a href={mailto}>{user}</a></div>
       )
     }
     /**
@@ -56,31 +39,13 @@ const TextInfo = (props) => {
      */
     else if (props.type === 'workemail') {
       const user = props.user;
-      const service = props.service;
-      let email = '';
-
-      /**
-       * to add a service add a new case for that provider
-       *
-       * defaults to an {@gmail.com} extension if one is not given
-       */
-      switch (service) {
-        case 'google':
-          email = user + '@gmail.com'; break;
-        case 'lisd':
-          email = user + '@go.lisd.net'; break;
-        case 'utdallas':
-          email = user + '@utdallas.edu'; break;
-        default:
-          email = user + '@gmail.com';
-      }
 
       /**
        * creates and returns a mailto: href with the email
        */
-      const mailto = 'mailto:' + email
+      const mailto = 'mailto:' + user
       return (
-        <div className='item'>Business Email: <a href={mailto}>{email}</a></div>
+        <div className='item'>Business Email: <a href={mailto}>{user}</a></div>
       )
     }
     /**

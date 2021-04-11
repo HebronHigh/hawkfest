@@ -18,13 +18,14 @@ const Contributor = (props) => {
 
         <div className='textinfo'>
           <TextInfo type='phonenumber' user={props.phonenumber} />
-          <TextInfo type='personalemail' user={props.personalemail} service={props.personalservice}/>
-          <TextInfo type='workemail' user={props.workemail} service={props.workservice}/>
+          <TextInfo type='personalemail' user={props.personalemail}/>
+          <TextInfo type='workemail' user={props.workemail}/>
         </div>
 
         <div className='infolinks'>
           <InfoLink type='github' user={props.githubName} />
           <InfoLink type='linkedin' user={props.linkedinName} />
+          <InfoLink type='website' user={props.website} />
           <InfoLink type='instagram' user={props.instagramName} />
         </div>
       </div>

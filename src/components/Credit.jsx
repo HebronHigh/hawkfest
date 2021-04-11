@@ -12,23 +12,20 @@ const Credit = () => {
               imageSource='/img/saitama.jpg'
               githubName='randompwner'
               linkedinName='ethan-maher'
-              personalemail='ethanamaher'
-              personalservice='google'
-              workemail='eam200004'
-              workservice='utdallas'
+              personalemail='ethanamaher@gmail.com'
+              workemail='eam200004@utdallas.edu'
+              website = 'https://randompwner.github.io'
             />
           </div>
 
           <div className='contributor'>
             <Contributor
-            name='Matthew Sheldon'
-            imageSource='/img/saitama.jpg'
+              name='Matthew Sheldon'
+              imageSource='/img/saitama.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
-              personalemail='punchwood2003'
-              personalservice='google'
-              workemail='matthewtsheldon'
-              workservice='google'
+              personalemail='punchwood2003@gmail.com'
+              workemail='matthewtsheldon@gmail.com'
             />
           </div>
 
@@ -45,8 +42,7 @@ const Credit = () => {
             imageSource='/img/saitama.jpg'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
-              workemail='jimenezj2'
-              workservice='lisd'
+              workemail='jimenezj2@go.lisd.net'
             />
           </div>
 
@@ -56,8 +52,7 @@ const Credit = () => {
             imageSource='/img/saitama.jpg'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
-              workemail='warisr'
-              workservice='lisd'
+              workemail='warisr@go.lisd.net'
             />
           </div>
 

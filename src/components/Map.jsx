@@ -56,7 +56,6 @@ function resetHighlight(e) {
  */
 function getColors(feature) {
   const regionNumber = feature.properties.REGION;
-  const media = feature.properties.HASDATA;
   switch (regionNumber) {
     case 0: return '#ffff00';
     case 1: return '#ff0000';
