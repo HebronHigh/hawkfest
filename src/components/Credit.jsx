@@ -31,15 +31,15 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-            name='Tyler Kerch'
-            imageSource='/img/saitama.jpg'
+              name='Tyler Kerch'
+              imageSource='/img/saitama.jpg'
             />
           </div>
 
           <div className='contributor'>
             <Contributor
-            name='Janine Jimenez'
-            imageSource='/img/saitama.jpg'
+              name='Janine Jimenez'
+              imageSource='/img/saitama.jpg'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
               workemail='jimenezj2@go.lisd.net'
@@ -48,8 +48,8 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-            name='Rayyan Waris'
-            imageSource='/img/saitama.jpg'
+              name='Rayyan Waris'
+              imageSource='/img/saitama.jpg'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
               workemail='warisr@go.lisd.net'
@@ -58,8 +58,10 @@ const Credit = () => {
 
           <div className='contributor'>
             <Contributor
-            name='Sanjitha Venkata'
+              name='Sanjitha Venkata'
             imageSource='/img/saitama.jpg'
+            linkedinName='sanjitha-venkata-843404209'
+            personalemail='sanjithavv@gmail.com'
             />
           </div>
 

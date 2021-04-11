@@ -5,6 +5,11 @@ import PortraitImage from './PortraitImage'
 import './Contributor.css'
 
 const Contributor = (props) => {
+
+  /**
+   * for textinfo and infolinks make sure you change the user prop
+   * currently they check if user is undefined to add something
+   */
   return (
     <div className = 'contribContainer'>
       <div className='photo'>
