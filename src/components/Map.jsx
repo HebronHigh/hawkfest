@@ -22,11 +22,9 @@ import { latLng, latLngBounds } from 'leaflet';
  * @author Ethan Maher
  */
 function highlight(e) {
-  const HAS_MEDIA = e.target.feature.properties.HAS_MEDIA;
-  console.log(HAS_MEDIA);
   const layer = e.target;
   layer.setStyle({
-    fillOpacity: .8,
+    fillOpacity: e.target.feature.properties.HASDATA === 0 ? .9 : .7,
     weight: 3,
   })
   layer.bringToFront();
@@ -42,9 +40,9 @@ function highlight(e) {
 function resetHighlight(e) {
   const layer = e.target;
   layer.setStyle({
-    weight: 1,
+    weight: 1.5,
     fillColor: getColors(layer.feature),
-    fillOpacity: .5
+    fillOpacity: e.target.feature.properties.HASDATA === 0 ? .8 : .5,
   })
 }
 
@@ -52,13 +50,13 @@ function resetHighlight(e) {
  * Returns the correct color of a layer from the REGION property in the JSON
  *
  * @param {*} layer the layer to get the original color of
- *
  * @returns the color that the layer needs to be
  *
  * @author Ethan Maher
  */
 function getColors(feature) {
   const regionNumber = feature.properties.REGION;
+  const media = feature.properties.HASDATA;
   switch (regionNumber) {
     case 0: return '#ffff00';
     case 1: return '#ff0000';
@@ -68,7 +66,6 @@ function getColors(feature) {
     default: return '#000000';
   }
 }
-
 
 /**
  * Class for Map component
@@ -106,12 +103,12 @@ class Map extends Component {
 
             <GeoJSON
               style={
-                function (feature) {
+              function (feature) {
                   return {
                     fillColor: getColors(feature),
-                    weight: 1,
-                    fillOpacity: .5,
-                    color: 'black'
+                    weight: 1.5,
+                    fillOpacity: feature.properties.HASDATA === 0 ? .8 : .5,
+                    color: 'black',
                   }
                 }
               }

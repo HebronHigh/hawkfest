@@ -25,7 +25,6 @@ const Credit = () => {
             imageSource='/img/saitama.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
-              phonenumber='469-430-7144'
               personalemail='punchwood2003'
               personalservice='google'
               workemail='matthewtsheldon'
