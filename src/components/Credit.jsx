@@ -3,7 +3,7 @@ import Contributor from './Contributor'
 import './Credit.css'
 const Credit = () => {
   return (
-    <div className='creditPage'>
+    <>
       <div className='header'><h1> CREDIT </h1></div>
       <div className='creditsContainer'>
           <div className='contributor'>
@@ -59,14 +59,14 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Sanjitha Venkata'
-            imageSource='/img/saitama.jpg'
-            linkedinName='sanjitha-venkata-843404209'
-            personalemail='sanjithavv@gmail.com'
+              imageSource='/img/saitama.jpg'
+              linkedinName='sanjitha-venkata-843404209'
+              personalemail='sanjithavv@gmail.com'
             />
           </div>
 
       </div>
-    </div>
+    </>
   )
 };
 

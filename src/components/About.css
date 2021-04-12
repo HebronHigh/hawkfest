@@ -1,27 +1,21 @@
-.creditsContainer {
+.aboutContainer {
   justify-content: center;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.contributor {
   text-align: center;
-  width:33vw;
+  margin-left: 25vw;
 }
 
-a {
+p {
+  height: 80%;
+  width: 50vw;
   color: #21255a;
-}
-
-a:hover {
-  color: #5A5621;
+  font-size: 3vmin;
 }
 
 h1 {
   color: #fff;
   text-align: center;
   text-decoration: underline;
-  font-size: 7vh;
+  font-size: 7vmin;
 }
 
 .header {
