@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hawkfest/static/css/main.6abe6f31.chunk.css",
-    "main.js": "/hawkfest/static/js/main.f9a3fb7c.chunk.js",
-    "main.js.map": "/hawkfest/static/js/main.f9a3fb7c.chunk.js.map",
+    "main.js": "/hawkfest/static/js/main.62e6794d.chunk.js",
+    "main.js.map": "/hawkfest/static/js/main.62e6794d.chunk.js.map",
     "runtime-main.js": "/hawkfest/static/js/runtime-main.abe48282.js",
     "runtime-main.js.map": "/hawkfest/static/js/runtime-main.abe48282.js.map",
     "static/css/2.b4ebbe46.chunk.css": "/hawkfest/static/css/2.b4ebbe46.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.b4ebbe46.chunk.css",
     "static/js/2.6ce2f014.chunk.js",
     "static/css/main.6abe6f31.chunk.css",
-    "static/js/main.f9a3fb7c.chunk.js"
+    "static/js/main.62e6794d.chunk.js"
   ]
 }
