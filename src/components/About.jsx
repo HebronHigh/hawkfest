@@ -6,9 +6,15 @@ const About = () => {
     <>
       <div className='header'><h1> ABOUT </h1></div>
       <div className='aboutContainer'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className='aboutText'>
+          Welcome to Hebron HawkFest, a celebration of our school's unique culture and diversity.
+        </div>
+        <div className='aboutText'>
+          <strong>Culture (n.):</strong> the shared values, beliefs, traditions, and customs that a group of people who teach to and learn from others
+        </div>
+        <div className='aboutText'>
+          Our community has assembled a gallery of what we believe makes Hebron's culture so vibrant and special - from our students' passions and interests to their heritage and traditions. We hope you take the time to explore all Hebron has to offer and connect with what each student has contributed!
+        </div>
       </div>
     </>
   )

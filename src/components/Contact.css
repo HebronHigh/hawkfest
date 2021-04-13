@@ -4,22 +4,31 @@
   margin-left: 25vw;
 }
 
-p {
+.contactText {
+  margin-top:3vh;
   height: 80%;
   width: 50vw;
   color: #21255a;
   font-size: 3vmin;
 }
 
+.contactTextHeader {
+  margin-top:4vh;
+  font-size: 4vmin;
+  font-weight: bold;
+  text-align: center;
+  width: 50vw;
+}
+
 h1 {
   color: #fff;
   text-align: center;
   text-decoration: underline;
-  font-size: 7vmin;
+  font-size: max(20px,7vmin);
 }
 
 .header {
   margin-top: -45px;
   background-color: #21255a;
-  height: 12vh;
+  height: max(40px,12vh);
 }

@@ -1,16 +1,29 @@
 import React from "react";
 import './Contact.css'
-import ContactForm from './ContactForm'
 
 const Contact = () => {
+  const zavarEmail = 'mailto:zavarv@lisd.net';
+  const garlingerEmail = 'mailto:garlingerj@lisd.net';
+  const stitesEmail = 'mailto:stitesj@lisd.net';
   return (
     <>
       <div className='header'><h1> CONTACT </h1></div>
       <div className='contactContainer'>
-        {/* <ContactForm /> */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className='contactTextHeader'>
+          HawkFest Committee
+        </div>
+        <div className='contactText'>
+          Dr. Vanessa Zavar: <a href={zavarEmail}>{zavarEmail.split(':')[1]}</a>
+        </div>
+        <div className='contactText'>
+          Dr. Jacob Garlinger: <a href={garlingerEmail}>{garlingerEmail.split(':')[1]}</a>
+        </div>
+        <div className='contactTextHeader'>
+          Website Design
+        </div>
+        <div className='contactText'>
+          Mr. Jared Stites: <a href={stitesEmail}>{stitesEmail.split(':')[1]}</a>
+        </div>
       </div>
     </>
 	);
