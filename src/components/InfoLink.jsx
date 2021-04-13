@@ -16,7 +16,6 @@ import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
  */
 const InfoLink = (props) => {
   if (typeof (props.user) !== 'undefined') {
-
     /**
      * checks if the proptype is a github username
      *
