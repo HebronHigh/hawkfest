@@ -49,7 +49,40 @@ p {
   background: rgba(0,0,0,0.8);
 }
 
-.info {
+.legend {
+  position: absolute;
+  z-index: 999;
+  left: 20px;
+  bottom: 20px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
+  font: 2vmin;
+  background: rgba(0,0,0,0.8);
+}
+.legend > p {
+  font-size: 2vmin;
+  color: white;
+}
+.legend > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0px 0px;
+  color: #fff;
+}
+.legend > div::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: var(--color);
+}
+
+.hovercontainer {
   position: absolute;
   z-index: 999;
   display: flex;
@@ -64,11 +97,11 @@ p {
   box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
   background: rgba(0,0,0,0.8);
 }
-.info strong {
+.hovercontainer strong {
   font-size: 3vmin;
   display: block;
   padding-bottom: 5px;
 }
-.info span {
+.hovercontainer span {
   text-align: right;
 }

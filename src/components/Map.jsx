@@ -1,9 +1,9 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { MapContainer, GeoJSON, TileLayer } from 'react-leaflet'
 import data from './../data/countries.json'
 import 'leaflet/dist/leaflet.css'
 import './Map.css'
-import L, { latLng, latLngBounds, layerGroup } from 'leaflet';
+import L, { latLng, latLngBounds } from 'leaflet';
 
 /*
   REGION NUMBERS GUIDE:
@@ -13,6 +13,13 @@ import L, { latLng, latLngBounds, layerGroup } from 'leaflet';
   3: Europe & Russia
   4: Western Hemisphere
 */
+
+const COLOR_0 = '#ffff00';
+const COLOR_1 = '#ff0000';
+const COLOR_2 = '#00ff00';
+const COLOR_3 = '#00ffff';
+const COLOR_4 = '#0000ff';
+const COLOR_DEFAULT = '#000000';
 
 /**
  * Returns the correct color of a layer from the REGION property in the JSON
@@ -25,12 +32,12 @@ import L, { latLng, latLngBounds, layerGroup } from 'leaflet';
 function getColors(feature) {
   const regionNumber = feature.properties.REGION;
   switch (regionNumber) {
-    case 0: return '#ffff00';
-    case 1: return '#ff0000';
-    case 2: return '#00ff00';
-    case 3: return '#00ffff';
-    case 4: return '#0000ff';
-    default: return '#000000';
+    case 0: return COLOR_0;
+    case 1: return COLOR_1;
+    case 2: return COLOR_2;
+    case 3: return COLOR_3;
+    case 4: return COLOR_4;
+    default: return COLOR_DEFAULT;
   }
 }
 
@@ -39,7 +46,7 @@ function style(feature) {
     fillColor: getColors(feature),
     weight: 1.5,
     opacity: 1,
-    fillOpacity: feature.properties.HASDATA === 0 ? .8 : .5,
+    fillOpacity: feature.properties.HASDATA === 0 ? .8 : .4,
     color: 'black'
   };
 }
@@ -60,7 +67,7 @@ const Map = () => {
 
     layer.setStyle({
       weight: 4,
-      fillOpacity: e.target.feature.properties.HASDATA === 0 ? .9 : .7,
+      fillOpacity: e.target.feature.properties.HASDATA === 0 ? 1 : .6,
       color: 'gray',
     });
 
@@ -90,13 +97,21 @@ const Map = () => {
   return (
     <div>
       {!selected.countryName && (
-          <div className="hover-info">Hover over an Area</div>
+          <div className="hover-info">Hover Over a Country</div>
         )}
         {selected.countryName && (
-          <div className="info">
+          <div className="hovercontainer">
             <strong>{selected.countryName}</strong>
           </div>
-        )}
+      )}
+      <div className="legend">
+          <p>Please Click on a Country With a Darker Color to Get Started</p>
+          <div style={{ "--color": COLOR_0 }}>Southwest Asia & Northern Africa</div>
+          <div style={{ "--color": COLOR_1 }}>Sub-Saharan Africa & Australia</div>
+          <div style={{ "--color": COLOR_2 }}>Not Monsoon Asia</div>
+          <div style={{ "--color": COLOR_3 }}>Europe & Russia</div>
+          <div style={{ "--color": COLOR_4 }}>Western Hemisphere</div>
+        </div>
       <MapContainer style={{ height: "90vh" }} minZoom={2} maxZoom={7} zoomControl={false} zoom={2} center={[12.345, 12.345]} maxBounds={latLngBounds(latLng(-90,-200),latLng(90,200))} maxBoundsViscosity={1.0}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
