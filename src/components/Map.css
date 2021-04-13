@@ -39,21 +39,21 @@ p {
   z-index: 999;
   display: flex;
   align-items: center;
-  top: 120px;
-  right: 50px;
+  top: 12vh;
+  right: 2vw;
   height: 24px;
   padding: 2vh 1vw;
   border-radius: 5px;
   color: #fff;
-  font-size: 3vmin;
+  font-size: 24px;
   background: rgba(0,0,0,0.8);
 }
 
 .legend {
   position: absolute;
   z-index: 999;
-  left: 20px;
-  bottom: 20px;
+  left: 1vw;
+  bottom: 2vh;
   padding: 10px 5px;
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
@@ -61,7 +61,8 @@ p {
   background: rgba(0,0,0,0.8);
 }
 .legend > p {
-  font-size: 2vmin;
+  margin-top: -1vh;
+  font-size: 20px;
   color: white;
 }
 .legend > div {
@@ -88,17 +89,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: right;
-  top: 120px;
-  right: 50px;
+  top: 12vh;
+  right: 2vw;
   padding: 1vh 1vw;
   border-radius: 5px;
   color: #fff;
-  font-size: 3vmin;
+  font-size: 24px;
   box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
   background: rgba(0,0,0,0.8);
 }
 .hovercontainer strong {
-  font-size: 3vmin;
   display: block;
   padding-bottom: 5px;
 }
