@@ -22,8 +22,6 @@ const TextInfo = (props) => {
      */
     if (props.type === 'personalemail') {
       const user = props.user;
-
-
       /**
        * creates and returns a mailto: href with the email
        */
@@ -46,17 +44,6 @@ const TextInfo = (props) => {
       const mailto = 'mailto:' + user
       return (
         <div className='item'>Business Email: <a href={mailto}>{user}</a></div>
-      )
-    }
-    /**
-     * checks if the prop type is a phone number
-     *
-     * if so it will return an item div
-     */
-    else if (props.type === 'phonenumber') {
-      const phone = props.user
-      return (
-        <div className='item'>Phone Number: {phone}</div>
       )
     }
   } else {

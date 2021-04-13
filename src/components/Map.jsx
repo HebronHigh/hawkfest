@@ -14,6 +14,9 @@ import L, { latLng, latLngBounds } from 'leaflet';
   4: Western Hemisphere
 */
 
+/**
+ * Color values for each region
+ */
 const COLOR_0 = '#ffff00';
 const COLOR_1 = '#ff0000';
 const COLOR_2 = '#00ff00';
@@ -41,6 +44,12 @@ function getColors(feature) {
   }
 }
 
+/**
+ * function to get the default styling of a feature in the map
+ *
+ * @param {*} feature the feature to be styled
+ * @returns the default style properties
+ */
 function style(feature) {
   return {
     fillColor: getColors(feature),
@@ -59,6 +68,12 @@ function style(feature) {
 const Map = () => {
   const [selected, setSelected] = useState({});
 
+  /**
+   * function to highlight a feature that was mouseovered
+   * also sets a selected country for the useState
+   *
+   * @param {*} e the thing to highlight
+   */
   function highlightFeature(e) {
     let layer = e.target;
     setSelected({
@@ -76,15 +91,25 @@ const Map = () => {
     }
   }
 
+  /**
+   * function to reset the highlighting on something being hovered
+   * @param {*} e the thing to reset the highlighting of
+   */
   function resetHighlight(e) {
     setSelected({});
     e.target.setStyle(style(e.target.feature));
   }
 
+  /**
+   * function for things to do to every country when it is mapped
+   *
+   * @param {*} country the feature
+   * @param {*} layer the layer
+   */
   function onEachCountry(country, layer) {
     layer.bindPopup(function () {
       const url = "/hawkfest/pages/" + country.properties.ADMIN + "/General%20Info.html"
-      return layer.feature.properties.HASDATA === 1
+      return country.properties.HASDATA === 1
       ? "<div>" + country.properties.ADMIN + "</div><a href=" + url + " id='viewmorebutton'>View Country Page</a>"
         : "<div>" + country.properties.ADMIN + "</div>";
     });
@@ -95,16 +120,15 @@ const Map = () => {
     })
   }
 
-
   return (
     <div>
       {!selected.countryName && (
           <div className="hover-info">Hover Over a Country</div>
-        )}
-        {selected.countryName && (
-          <div className="hovercontainer">
-            <strong>{selected.countryName}</strong>
-          </div>
+      )}
+      {selected.countryName && (
+        <div className="hovercontainer">
+          <strong>{selected.countryName}</strong>
+        </div>
       )}
       <div className="legend">
           <p>Please Click on a Country With a Darker Color to Get Started</p>
