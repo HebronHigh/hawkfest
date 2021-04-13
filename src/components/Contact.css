@@ -1,6 +1,14 @@
 .contactContainer {
   justify-content: center;
   text-align: center;
+  margin-left: 25vw;
+}
+
+p {
+  height: 80%;
+  width: 50vw;
+  color: #21255a;
+  font-size: 3vmin;
 }
 
 h1 {

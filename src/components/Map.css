@@ -6,6 +6,12 @@ body {
   background-color: rgb(178, 210, 222);
 }
 
+div {
+  text-align: center;
+  font-size: 2vmin;
+  color: #21255a;
+}
+
 .countrylabel {
   font-size: 4vmin;
   color: #21255a;
@@ -24,6 +30,7 @@ body {
   padding: .66em 1em;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.25vmin;
 }
 
 #viewmorebutton:hover {
@@ -39,13 +46,13 @@ body {
   z-index: 999;
   display: flex;
   align-items: center;
-  top: 12vh;
+  top: max(80px,12vh);
   right: 2vw;
   height: 24px;
   padding: 2vh 1vw;
   border-radius: 5px;
   color: #fff;
-  font-size: 24px;
+  font-size: max(16px,4vmin);
   background: rgba(0,0,0,0.8);
 }
 
@@ -62,9 +69,9 @@ body {
 }
 .legend > p {
   margin-top: -1vh;
-  font-size: 20px;
+  font-size: max(12px,2vmin);
   color: white;
-  width: auto;
+  width: max(200px, 56vmin);
   text-align: left;
 }
 .legend > div {
@@ -72,6 +79,7 @@ body {
   display: flex;
   align-items: center;
   height: 20px;
+  font-size: max(12px,1.7vmin);
   padding: 0px 0px;
   color: #fff;
 }
@@ -91,12 +99,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: right;
-  top: 12vh;
+  top: max(72px,12vh);
   right: 2vw;
   padding: 1vh 1vw;
   border-radius: 5px;
   color: #fff;
-  font-size: 24px;
+  font-size: max(16px,4vmin);
   box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
   background: rgba(0,0,0,0.8);
 }

@@ -5,23 +5,23 @@ span {
 
 .container {
   background-color:#21255a;
-  height:10vh;
+  height:max(60px,10vh);
   display: flex;
   align-items: center;
 }
 
 .child-left {
-  font-family: leaves_and_ground;
+  font-family: Leaves and Ground Regular;
   flex: 1;
   margin-left: 5vh;
   text-align: left;
-  font-size:8vmin;
+  font-size:max(20px,7vmin);
   flex-wrap: nowrap;
 }
 .child-right {
   font-family:Ultrathins;
   margin-right: 3vw;
-  font-size:4vmin;
+  font-size:max(30px,4vmin);
 }
 
 .selected {
