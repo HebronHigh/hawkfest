@@ -46,7 +46,7 @@ function style(feature) {
     fillColor: getColors(feature),
     weight: 1.5,
     opacity: 1,
-    fillOpacity: feature.properties.HASDATA === 0 ? .8 : .4,
+    fillOpacity: feature.properties.HASDATA === 1 ? .8 : .4,
     color: 'black'
   };
 }
@@ -67,7 +67,7 @@ const Map = () => {
 
     layer.setStyle({
       weight: 4,
-      fillOpacity: e.target.feature.properties.HASDATA === 0 ? 1 : .6,
+      fillOpacity: e.target.feature.properties.HASDATA === 1 ? 1 : .6,
       color: 'gray',
     });
 
