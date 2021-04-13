@@ -5,7 +5,7 @@ span {
 
 .container {
   background-color:#21255a;
-  height:10vmin;
+  height:10vh;
   display: flex;
   align-items: center;
 }
@@ -20,7 +20,7 @@ span {
 }
 .child-right {
   font-family:Ultrathins;
-  margin-right: 5vw;
+  margin-right: 3vw;
   font-size:4vmin;
 }
 
@@ -32,7 +32,7 @@ span {
   font-weight: bold;
   text-decoration: none;
   color:white;
-  margin-left: 4vw;
+  margin-left: 3vw;
 }
 
 .nav_link_img {

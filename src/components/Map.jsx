@@ -84,7 +84,9 @@ const Map = () => {
   function onEachCountry(country, layer) {
     layer.bindPopup(function () {
       const url = "/hawkfest/pages/" + country.properties.ADMIN + "/General%20Info.html"
-      return layer.feature.properties.HASDATA === 1 ? "<p>" + country.properties.ADMIN + "</p><a href=" + url + " id='viewmorebutton'>View Country Page</a>" : "<p>" + country.properties.ADMIN + "</p>";
+      return layer.feature.properties.HASDATA === 1
+        ? "<p class='countrylabel'>" + country.properties.ADMIN + "</p><a href=" + url + " id='viewmorebutton'>View Country Page</a>"
+          : "<p class='countrylabel'>" + country.properties.ADMIN + "</p>";
     });
 
     layer.on({

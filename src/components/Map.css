@@ -6,16 +6,16 @@ body {
   background-color: rgb(178, 210, 222);
 }
 
-p {
-  text-align: center;
-  font-size: 2vmin;
+.countrylabel {
+  font-size: 4vmin;
   color: #21255a;
+  text-align: center;
 }
 
 .custom .leaflet-popup-tip,
 .custom .leaflet-popup-content-wrapper {
   text-align: center;
-  font-size: 14px;
+  width: auto;
 }
 
 #viewmorebutton{
@@ -64,6 +64,8 @@ p {
   margin-top: -1vh;
   font-size: 20px;
   color: white;
+  width: auto;
+  text-align: left;
 }
 .legend > div {
   position: relative;
