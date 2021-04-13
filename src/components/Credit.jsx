@@ -3,7 +3,7 @@ import Contributor from './Contributor'
 import './Credit.css'
 const Credit = () => {
   return (
-    <div className='creditPage'>
+    <>
       <div className='header'><h1> CREDIT </h1></div>
       <div className='creditsContainer'>
           <div className='contributor'>
@@ -66,7 +66,7 @@ const Credit = () => {
           </div>
 
       </div>
-    </div>
+    </>
   )
 };
 

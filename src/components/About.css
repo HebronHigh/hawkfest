@@ -1,4 +1,5 @@
-.creditsContainer {
+
+.aboutContainer {
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
@@ -6,14 +7,6 @@
 .contributor {
   text-align: center;
   width:33vw;
-}
-
-a {
-  color: #21255a;
-}
-
-a:hover {
-  color: #5A5621;
 }
 
 h1 {
