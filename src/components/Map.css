@@ -33,3 +33,42 @@ p {
 #viewmorebutton:active {
   color: gray;
 }
+
+.hover-info {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  top: 120px;
+  right: 50px;
+  height: 24px;
+  padding: 2vh 1vw;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 3vmin;
+  background: rgba(0,0,0,0.8);
+}
+
+.info {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  top: 120px;
+  right: 50px;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 3vmin;
+  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
+  background: rgba(0,0,0,0.8);
+}
+.info strong {
+  font-size: 3vmin;
+  display: block;
+  padding-bottom: 5px;
+}
+.info span {
+  text-align: right;
+}
