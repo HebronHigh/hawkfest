@@ -9,7 +9,7 @@ import L, { latLng, latLngBounds } from 'leaflet';
   REGION NUMBERS GUIDE:
   0: Southwest Asia & Northern Africa
   1: Sub-Saharan Africa & Australia
-  2: Not Monsoon Asia
+  2: East & Southeast Asia
   3: Europe & Russia
   4: Western Hemisphere
 */
@@ -108,7 +108,7 @@ const Map = () => {
           <p>Please Click on a Country With a Darker Color to Get Started</p>
           <div style={{ "--color": COLOR_0 }}>Southwest Asia & Northern Africa</div>
           <div style={{ "--color": COLOR_1 }}>Sub-Saharan Africa & Australia</div>
-          <div style={{ "--color": COLOR_2 }}>Not Monsoon Asia</div>
+          <div style={{ "--color": COLOR_2 }}>East & Southeast Asia</div>
           <div style={{ "--color": COLOR_3 }}>Europe & Russia</div>
           <div style={{ "--color": COLOR_4 }}>Western Hemisphere</div>
         </div>
