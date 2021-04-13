@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hawkfest/static/css/main.d264f584.chunk.css",
+    "main.css": "/hawkfest/static/css/main.805884ca.chunk.css",
     "main.js": "/hawkfest/static/js/main.e60bcc32.chunk.js",
     "main.js.map": "/hawkfest/static/js/main.e60bcc32.chunk.js.map",
     "runtime-main.js": "/hawkfest/static/js/runtime-main.abe48282.js",
@@ -10,7 +10,7 @@
     "static/js/2.dbff1321.chunk.js.map": "/hawkfest/static/js/2.dbff1321.chunk.js.map",
     "index.html": "/hawkfest/index.html",
     "static/css/2.b4ebbe46.chunk.css.map": "/hawkfest/static/css/2.b4ebbe46.chunk.css.map",
-    "static/css/main.d264f584.chunk.css.map": "/hawkfest/static/css/main.d264f584.chunk.css.map",
+    "static/css/main.805884ca.chunk.css.map": "/hawkfest/static/css/main.805884ca.chunk.css.map",
     "static/js/2.dbff1321.chunk.js.LICENSE.txt": "/hawkfest/static/js/2.dbff1321.chunk.js.LICENSE.txt",
     "static/media/index.css": "/hawkfest/static/media/leaves_and_ground.d7e8068f.ttf",
     "static/media/WhiteOutlineLogo.2d69263f.png": "/hawkfest/static/media/WhiteOutlineLogo.2d69263f.png"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.abe48282.js",
     "static/css/2.b4ebbe46.chunk.css",
     "static/js/2.dbff1321.chunk.js",
-    "static/css/main.d264f584.chunk.css",
+    "static/css/main.805884ca.chunk.css",
     "static/js/main.e60bcc32.chunk.js"
   ]
 }
