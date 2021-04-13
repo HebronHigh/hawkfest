@@ -33,6 +33,9 @@ const Credit = () => {
             <Contributor
               name='Tyler Kerch'
               imageSource='/img/saitama.jpg'
+              linkedinName='tyler-kerch-87b811200'
+              instagramName='tylerkerch'
+              personalemail='kerchtc@gmail.com'
             />
           </div>
 
