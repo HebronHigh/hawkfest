@@ -8,7 +8,8 @@ body {
 
 p {
   text-align: center;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
+  color: #21255a;
 }
 
 .custom .leaflet-popup-tip,
@@ -31,4 +32,76 @@ p {
 
 #viewmorebutton:active {
   color: gray;
+}
+
+.hover-info {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  top: 12vh;
+  right: 2vw;
+  height: 24px;
+  padding: 2vh 1vw;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  background: rgba(0,0,0,0.8);
+}
+
+.legend {
+  position: absolute;
+  z-index: 999;
+  left: 1vw;
+  bottom: 2vh;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
+  font: 2vmin;
+  background: rgba(0,0,0,0.8);
+}
+.legend > p {
+  margin-top: -1vh;
+  font-size: 20px;
+  color: white;
+}
+.legend > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0px 0px;
+  color: #fff;
+}
+.legend > div::before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: var(--color);
+}
+
+.hovercontainer {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  top: 12vh;
+  right: 2vw;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 0 5px 0 rgba(255,255,255, 0.3);
+  background: rgba(0,0,0,0.8);
+}
+.hovercontainer strong {
+  display: block;
+  padding-bottom: 5px;
+}
+.hovercontainer span {
+  text-align: right;
 }

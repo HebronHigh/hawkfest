@@ -16,6 +16,7 @@ span {
   margin-left: 5vh;
   text-align: left;
   font-size:8vmin;
+  flex-wrap: nowrap;
 }
 .child-right {
   font-family:Ultrathins;
@@ -40,6 +41,12 @@ span {
   color:white;
   margin-right: 1vw;
 }
+
+img {
+  width: 7vmin;
+  height: 5vmin;
+}
+
 .nav_link:hover {
   color: gray;
 }

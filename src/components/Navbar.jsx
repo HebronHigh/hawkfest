@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='child-left'>
         <NavLink to='/hawkfest' className='nav_link_img'>
           <a href='/hawkfest'>
-            <img src={logo} width='65vh' height='50vh' alt=''></img>
+            <img src={logo} alt=''></img>
           </a>
         </NavLink>
         <span>HawkFest2021</span>
