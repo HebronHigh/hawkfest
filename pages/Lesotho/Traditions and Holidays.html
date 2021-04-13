@@ -16,10 +16,10 @@
         /* Changes the font of the page */
         @font-face {
             font-family: 'LeavesAndGround';
-            src: url('Fonts/LeavesAndGround.woff2') format('woff2'),
-                url('Fonts/LeavesAndGround.woff') format('woff'),
-                url('Fonts/LeavesAndGround.ttf') format('truetype'),
-                url('Fonts/LeavesAndGround.svg#LeavesAndGround') format('svg');
+            src: url('../../fonts/LeavesAndGround.woff2') format('woff2'),
+                url('../../fonts/LeavesAndGround.woff') format('woff'),
+                url('../../fonts/LeavesAndGround.ttf') format('truetype'),
+                url('../../fonts/LeavesAndGround.svg#LeavesAndGround') format('svg');
             font-weight: lighter;
             font-style: normal;
             font-display: swap;
@@ -110,6 +110,12 @@
             height: auto !important;
         }
 
+        /* This will style PDFs that are used */
+        article iframe {
+            width: 50vmin;
+            height: auto;
+        }
+
         /* Clear floats after the columns */
         section::after {
             content: "";
@@ -153,7 +159,7 @@
         <nav>
             <ul>
                 <a href="/hawkfest/">
-                    <img alt="Home" src="WhiteOutlineLogo.png">
+                    <img alt="Home" src="../../img/WhiteOutlineLogo.png">
                     Home
                 </a>
                 <a href="General Info.html">General Info</a>
