@@ -9,7 +9,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Ethan Maher'
-              imageSource='/img/ethan_maher_profile_picture.jpg'
+              imageSource='/img/saitama.jpg'
               githubName='randompwner'
               linkedinName='ethan-maher'
               personalemail='ethanamaher@gmail.com'
