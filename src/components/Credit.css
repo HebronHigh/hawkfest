@@ -4,6 +4,13 @@
   flex-flow: row wrap;
 }
 
+.creditPageText {
+  margin-top:2vh;
+  font-size: 2vmin;
+  margin-left:25vw;
+  width: 50vw;
+}
+
 .contributor {
   text-align: center;
   width:33vw;

@@ -5,6 +5,10 @@ const Credit = () => {
   return (
     <>
       <div className='header'><h1> CREDIT </h1></div>
+      <div className='creditPageText'>
+        The information on each country page was compiled by students at feeder schools to Hebron High School.<br /><br />
+        The website was built by the students listed below.
+      </div>
       <div className='creditsContainer'>
           <div className='contributor'>
             <Contributor
@@ -67,7 +71,6 @@ const Credit = () => {
               personalemail='sanjithavv@gmail.com'
             />
           </div>
-
       </div>
     </>
   )
