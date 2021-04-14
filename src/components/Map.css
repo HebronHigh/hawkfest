@@ -71,7 +71,7 @@ div {
   margin-top: -1vh;
   font-size: max(12px,2vmin);
   color: white;
-  width: max(200px, 56vmin);
+  width: max(200px, 54vmin);
   text-align: left;
 }
 .legend > div {
