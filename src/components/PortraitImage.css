@@ -1,7 +1,7 @@
-.profilepicture {
-  margin-top:3vmin;
+img.rounded {
+  margin-top: 4vh;
+  height: 100px;
   width:100px;
-  height:100px;
+  object-fit:cover;
   border-radius: 50%;
-  overflow: hidden;
 }

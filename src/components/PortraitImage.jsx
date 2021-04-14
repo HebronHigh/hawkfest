@@ -4,7 +4,7 @@ import './PortraitImage.css'
 const ImagePortait = (props) => {
   const path = props.location;
   return (
-    <img className='profilepicture' src={process.env.PUBLIC_URL + path} alt=''></img>
+    <img src={process.env.PUBLIC_URL + path} alt='' class='rounded'/>
   )
 }
 
