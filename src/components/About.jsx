@@ -1,6 +1,13 @@
 import React from 'react';
 import './About.css'
 
+
+/**
+ * functional component for the about page
+ *
+ * @returns html for the about page
+ * @author Ethan Maher
+ */
 const About = () => {
   return (
     <>

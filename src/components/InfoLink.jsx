@@ -1,5 +1,11 @@
 import React from 'react';
 import './InfoLink.css'
+
+/**
+ * import icons to use with this
+ *
+ * https://github.com/ismamz/react-bootstrap-icons/tree/master/src/icons
+ */
 import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
 
 /**
@@ -11,7 +17,6 @@ import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
  *
  * @param {*} props the prop passed for the InfoLink
  * @returns href using a react-bootstrap icon for the media
- *
  * @author Ethan Maher
  */
 const InfoLink = (props) => {

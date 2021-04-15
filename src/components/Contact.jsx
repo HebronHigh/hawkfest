@@ -1,7 +1,18 @@
 import React from "react";
 import './Contact.css'
 
+
+/**
+ * functional component for the contact page
+ *
+ * @returns html for the contact page
+ * @author Ethan Maher
+ */
 const Contact = () => {
+  /*
+  To add more contacts make more consts for their emails
+  And add them to their respective categories
+   */
   const zavarEmail = 'mailto:zavarv@lisd.net';
   const garlingerEmail = 'mailto:garlingerj@lisd.net';
   const stitesEmail = 'mailto:stitesj@lisd.net';

@@ -1,6 +1,13 @@
 import React from 'react';
 import Contributor from './Contributor'
 import './Credit.css'
+
+/**
+ * functional component for the credit page
+ *
+ * @returns html for the credit page
+ * @author Ethan Maher
+ */
 const Credit = () => {
   return (
     <>

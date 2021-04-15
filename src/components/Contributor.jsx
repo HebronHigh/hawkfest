@@ -1,9 +1,31 @@
 import React from 'react';
 import InfoLink from './InfoLink'
 import TextInfo from './TextInfo'
-import PortraitImage from './PortraitImage'
 import './Contributor.css'
 
+
+/**
+ * functional component for profile pictures on the credit page
+ *
+ * @param {*} props the image path
+ * @returns html for the profile picture
+ *
+ * @author Ethan Maher
+ */
+const PortraitImage = (props) => {
+  const path = props.location;
+  return (
+    <img src={process.env.PUBLIC_URL + path} alt='' class='rounded'/>
+  )
+}
+
+/**
+ * functional component for Contributors
+ *
+ * @param {*} props props for the contributor
+ * @returns html for the contributor
+ * @author Ethan Maher
+ */
 const Contributor = (props) => {
 
   /**

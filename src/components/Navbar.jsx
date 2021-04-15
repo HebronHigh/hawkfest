@@ -3,6 +3,13 @@ import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../assets/WhiteOutlineLogo.png'
 
+
+/**
+ * functional component for the navbar
+ *
+ * @returns html for the navbar at the top of the screen
+ * @author Ethan Maher
+ */
 const Navbar = () => {
   return (
     <div className='container'>

@@ -63,6 +63,7 @@ function style(feature) {
 /**
  * functional component for the map
  *
+ * @returns html for the map
  * @author Ethan Maher
  */
 const Map = () => {
