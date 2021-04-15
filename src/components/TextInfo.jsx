@@ -10,7 +10,6 @@ import './TextInfo.css'
  *
  * @param {*} props the prop passed for the TextInfo
  * @returns html for the given prop
- *
  * @author Ethan Maher
  */
 const TextInfo = (props) => {
