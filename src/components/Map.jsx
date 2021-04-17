@@ -109,7 +109,7 @@ const Map = () => {
    */
   function onEachCountry(country, layer) {
     layer.bindPopup(function () {
-      const url = "/hawkfest/pages/" + country.properties.ADMIN + "/General%20Info.html"
+      const url = "/hawkfest/pages/" + country.properties.ADMIN.replaceAll(" ", "%20") + "/General%20Info.html"
       return country.properties.HASDATA === 1
       ? "<div>" + country.properties.ADMIN + "</div><a href=" + url + " id='viewmorebutton'>View Country Page</a>"
         : "<div>" + country.properties.ADMIN + "</div>";
