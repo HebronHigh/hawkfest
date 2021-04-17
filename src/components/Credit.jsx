@@ -32,7 +32,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Matthew Sheldon'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/matthew1.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
               personalemail='punchwood2003@gmail.com'
@@ -53,7 +53,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Janine Jimenez'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/janine.jpg'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
               workemail='jimenezj2@go.lisd.net'
@@ -63,7 +63,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Rayyan Waris'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/rayyan.jpg'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
               workemail='warisr@go.lisd.net'
@@ -73,7 +73,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Sanjitha Venkata'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/sanjitha.jpg'
               linkedinName='sanjitha-venkata-843404209'
               personalemail='sanjithavv@gmail.com'
             />
