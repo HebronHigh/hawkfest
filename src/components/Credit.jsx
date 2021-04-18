@@ -20,7 +20,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Ethan Maher'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/ethan.jpg'
               githubName='randompwner'
               linkedinName='ethan-maher'
               personalemail='ethanamaher@gmail.com'
@@ -32,7 +32,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Matthew Sheldon'
-              imageSource='/img/matthew1.jpg'
+              imageSource='/img/matthew.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
               personalemail='punchwood2003@gmail.com'
@@ -43,7 +43,7 @@ const Credit = () => {
           <div className='contributor'>
             <Contributor
               name='Tyler Kerch'
-              imageSource='/img/saitama.jpg'
+              imageSource='/img/tyler.jpg'
               linkedinName='tyler-kerch-87b811200'
               instagramName='tylerkerch'
               personalemail='kerchtc@gmail.com'
