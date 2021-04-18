@@ -4,7 +4,14 @@
   flex-flow: row wrap;
 }
 
-.creditPageText {
+.creditPageTextLarge {
+  margin-top:2vh;
+  font-size: 3vmin;
+  margin-left:25vw;
+  width: 50vw;
+}
+
+.creditPageTextSmall {
   margin-top:2vh;
   font-size: 2vmin;
   margin-left:25vw;

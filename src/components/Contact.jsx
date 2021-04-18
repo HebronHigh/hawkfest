@@ -21,7 +21,7 @@ const Contact = () => {
       <div className='header'><h1> CONTACT </h1></div>
       <div className='contactContainer'>
         <div className='contactTextHeader'>
-          HawkFest Committee
+          HawkFest Content Liaisons
         </div>
         <div className='contactText'>
           Dr. Vanessa Zavar: <a href={zavarEmail}>{zavarEmail.split(':')[1]}</a>

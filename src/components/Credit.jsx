@@ -12,9 +12,11 @@ const Credit = () => {
   return (
     <>
       <div className='header'><h1> CREDIT </h1></div>
-      <div className='creditPageText'>
-        The information on each country page was compiled by students in the Hebron High School feeder pattern.<br /><br />
-        The website was built by the students listed below.
+      <div className='creditPageTextLarge'>
+        The information on each country page was provided by the Hebron High feeder schools.
+      </div>
+      <div className='creditPageTextSmall'>
+        The website was designed and built by the following Hebron students.
       </div>
       <div className='creditsContainer'>
           <div className='contributor'>
