@@ -20,7 +20,8 @@
 
 .contributor {
   text-align: center;
-  width:33vw;
+  width:25vw;
+  border: 2px solid white;
 }
 
 a {
