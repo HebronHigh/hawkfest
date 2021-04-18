@@ -30,7 +30,7 @@ const InfoLink = (props) => {
       const link = 'https://github.com/' + props.user;
       return (
         <a href={link} target='_blank' rel='noreferrer'>
-          <Github width='40px' size={30} />
+          <Github width='4vmin' size={30} />
         </a>
       )
     }
@@ -43,7 +43,7 @@ const InfoLink = (props) => {
       const link = 'https://www.linkedin.com/in/' + props.user;
       return (
         <a href={link} target='_blank' rel='noreferrer'>
-          <Linkedin width='40px' size={30} />
+          <Linkedin width='4vmin' size={30} />
         </a>
       )
     }
@@ -57,7 +57,7 @@ const InfoLink = (props) => {
 
       return (
         <a href={link} target='_blank' rel='noreferrer'>
-          <Globe2 width='40px' size={30} />
+          <Globe2 width='4vmin' size={30} />
         </a>
       )
     }
@@ -70,7 +70,7 @@ const InfoLink = (props) => {
       const link = 'https://www.instagram.com/' + props.user;
       return (
         <a href={link} target='_blank' rel='noreferrer'>
-          <Instagram width='40px' size={30} />
+          <Instagram width='4vmin' size={30} />
         </a>
       )
     }

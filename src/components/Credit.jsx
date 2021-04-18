@@ -13,7 +13,7 @@ const Credit = () => {
     <>
       <div className='header'><h1> CREDIT </h1></div>
       <div className='creditPageText'>
-        The information on each country page was compiled by students at feeder schools to Hebron High School.<br /><br />
+        The information on each country page was compiled by students in the Hebron High School feeder pattern.<br /><br />
         The website was built by the students listed below.
       </div>
       <div className='creditsContainer'>
