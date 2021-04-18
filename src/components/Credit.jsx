@@ -25,8 +25,7 @@ const Credit = () => {
               imageSource='/img/ethan.jpg'
               githubName='randompwner'
               linkedinName='ethan-maher'
-              personalemail='ethanamaher@gmail.com'
-              workemail='eam200004@utdallas.edu'
+              email='ethanamaher@gmail.com'
               website = 'https://randompwner.github.io'
             />
           </div>
@@ -37,8 +36,7 @@ const Credit = () => {
               imageSource='/img/matthew.jpg'
               githubName='Punchwood2003'
               linkedinName='matthew-sheldon-280812200'
-              personalemail='punchwood2003@gmail.com'
-              workemail='matthewtsheldon@gmail.com'
+              email='matthewtsheldon@gmail.com'
             />
           </div>
 
@@ -48,7 +46,7 @@ const Credit = () => {
               imageSource='/img/tyler.jpg'
               linkedinName='tyler-kerch-87b811200'
               instagramName='tylerkerch'
-              personalemail='kerchtc@gmail.com'
+              email='kerchtc@gmail.com'
             />
           </div>
 
@@ -58,7 +56,7 @@ const Credit = () => {
               imageSource='/img/janine.jpg'
               githubName='jsjimenezdotcom'
               linkedinName='janine-jimenez-172152201'
-              workemail='jimenezj2@go.lisd.net'
+              email='jimenezj2@go.lisd.net'
             />
           </div>
 
@@ -68,7 +66,7 @@ const Credit = () => {
               imageSource='/img/rayyan.jpg'
               linkedinName='rayyan-waris-b6821020b'
               instagramName='raywa04'
-              workemail='warisr@go.lisd.net'
+              email='warisr@go.lisd.net'
             />
           </div>
 
@@ -77,7 +75,7 @@ const Credit = () => {
               name='Sanjitha Venkata'
               imageSource='/img/sanjitha.jpg'
               linkedinName='sanjitha-venkata-843404209'
-              personalemail='sanjithavv@gmail.com'
+              email='sanjithavv@gmail.com'
             />
           </div>
       </div>

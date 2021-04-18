@@ -45,8 +45,7 @@ const Contributor = (props) => {
 
         <div className='textinfo'>
           <TextInfo type='phonenumber' user={props.phonenumber} />
-          <TextInfo type='personalemail' user={props.personalemail}/>
-          <TextInfo type='workemail' user={props.workemail}/>
+          <TextInfo type='email' user={props.email}/>
         </div>
 
         <div className='infolinks'>
