@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapContainer, GeoJSON, TileLayer } from 'react-leaflet'
-import data from './../data/countries.json'
-import 'leaflet/dist/leaflet.css'
-import './Map.css'
 import L, { latLng, latLngBounds } from 'leaflet';
+
+import 'leaflet/dist/leaflet.css'
+import './../styles/Map.css'
+
+import data from './../data/countries.json'
 
 /*
   REGION NUMBERS GUIDE:

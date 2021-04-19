@@ -1,5 +1,4 @@
-import React from 'react';
-import './InfoLink.css'
+import './../styles/InfoLink.css'
 
 /**
  * import icons to use with this

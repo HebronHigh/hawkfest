@@ -1,5 +1,4 @@
-import React from 'react';
-import './TextInfo.css'
+import './../styles/TextInfo.css'
 
 /**
  * TextInfo functional component for the Credit Page

@@ -1,6 +1,6 @@
-import React from 'react';
 import Contributor from './Contributor'
-import './Credit.css'
+
+import './../styles/Credit.css'
 
 /**
  * functional component for the credit page

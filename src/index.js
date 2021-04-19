@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
+
+import './index.css';
+
 import './fonts/Ultrathins.ttf'
 import './fonts/leaves_and_ground.ttf'
 

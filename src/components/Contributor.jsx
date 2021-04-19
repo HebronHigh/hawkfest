@@ -1,7 +1,7 @@
-import React from 'react';
 import InfoLink from './InfoLink'
 import TextInfo from './TextInfo'
-import './Contributor.css'
+
+import './../styles/Contributor.css'
 
 
 /**
