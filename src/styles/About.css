@@ -9,7 +9,7 @@
   height: 80%;
   width: 50vw;
   color: #21255a;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
 }
 
 h1 {
@@ -20,7 +20,19 @@ h1 {
 }
 
 .header {
-  margin-top: -45px;
+  margin-top: -5vh;
   background-color: #21255a;
   height: max(40px,12vh);
+}
+.player-wrapper {
+  display: block;
+  margin: 0 auto;
+  width:50vw;
+  border: 40px solid black;
+}
+
+video {
+  transform: translate(-50%);
+  position: absolute;
+  left: 50%;
 }
