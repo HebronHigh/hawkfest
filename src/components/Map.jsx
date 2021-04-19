@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MapContainer, GeoJSON, TileLayer } from 'react-leaflet'
 import L, { latLng, latLngBounds } from 'leaflet';
 
-import 'leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css';
 import './../styles/Map.css'
 
 import data from './../data/countries.json'
