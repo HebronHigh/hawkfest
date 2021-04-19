@@ -1,14 +1,9 @@
-import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Map from './components/Map'
-import React from 'react'
-import ReactGA from 'react-ga';
 import Navbar from './components/Navbar'
+import Map from './components/Map'
 import About from './components/About'
 import Contact from './components/Contact'
 import Credit from './components/Credit'
-
-ReactGA.initialize('UA-193267831-1')
 
 export default function App() {
   return (
