@@ -32,6 +32,16 @@ a:hover {
   color: #5A5621;
 }
 
+.sourcecode {
+  color: #5a2125;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.sourcecode:hover {
+  color: #215a56;
+}
+
 h1 {
   color: #fff;
   text-align: center;

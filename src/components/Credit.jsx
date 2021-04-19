@@ -16,7 +16,7 @@ const Credit = () => {
         The information on each country page was provided by the Hebron High feeder schools.
       </div>
       <div className='creditPageTextSmall'>
-        The website was designed and built by the following Hebron students.
+        This website was designed and built by the following Hebron students. The source code can be found <a className='sourcecode' href='https://github.com/HebronHigh/hawkfest' rel='noreferrer' target="_blank">here</a>.
       </div>
       <div className='creditsContainer'>
           <div className='contributor'>
