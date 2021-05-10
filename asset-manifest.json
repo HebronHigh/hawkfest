@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hawkfest/static/css/main.d9043a22.chunk.css",
-    "main.js": "/hawkfest/static/js/main.be8f9203.chunk.js",
-    "main.js.map": "/hawkfest/static/js/main.be8f9203.chunk.js.map",
+    "main.css": "/hawkfest/static/css/main.66dc80dd.chunk.css",
+    "main.js": "/hawkfest/static/js/main.515590e0.chunk.js",
+    "main.js.map": "/hawkfest/static/js/main.515590e0.chunk.js.map",
     "runtime-main.js": "/hawkfest/static/js/runtime-main.abe48282.js",
     "runtime-main.js.map": "/hawkfest/static/js/runtime-main.abe48282.js.map",
     "static/css/2.2eb2c7c0.chunk.css": "/hawkfest/static/css/2.2eb2c7c0.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.19c1687a.chunk.js.map": "/hawkfest/static/js/2.19c1687a.chunk.js.map",
     "index.html": "/hawkfest/index.html",
     "static/css/2.2eb2c7c0.chunk.css.map": "/hawkfest/static/css/2.2eb2c7c0.chunk.css.map",
-    "static/css/main.d9043a22.chunk.css.map": "/hawkfest/static/css/main.d9043a22.chunk.css.map",
+    "static/css/main.66dc80dd.chunk.css.map": "/hawkfest/static/css/main.66dc80dd.chunk.css.map",
     "static/js/2.19c1687a.chunk.js.LICENSE.txt": "/hawkfest/static/js/2.19c1687a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/hawkfest/static/media/leaves_and_ground.6fd7eeb6.woff",
     "static/media/WhiteOutlineLogo.2d69263f.png": "/hawkfest/static/media/WhiteOutlineLogo.2d69263f.png",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.abe48282.js",
     "static/css/2.2eb2c7c0.chunk.css",
     "static/js/2.19c1687a.chunk.js",
-    "static/css/main.d9043a22.chunk.css",
-    "static/js/main.be8f9203.chunk.js"
+    "static/css/main.66dc80dd.chunk.css",
+    "static/js/main.515590e0.chunk.js"
   ]
 }
