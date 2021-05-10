@@ -28,7 +28,7 @@ h1 {
 }
 
 .header {
-  margin-top: -45px;
+  margin-top: -5vh;
   background-color: #21255a;
   height: max(40px,12vh);
 }

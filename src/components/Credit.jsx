@@ -54,7 +54,7 @@ const Credit = () => {
             <Contributor
               name='Janine Jimenez'
               imageSource='/img/janine.jpg'
-              githubName='jsjimenezdotcom'
+              githubName='JSJ9'
               linkedinName='janine-jimenez-172152201'
               email='jimenezj2@go.lisd.net'
             />
