@@ -23,10 +23,10 @@ const Credit = () => {
             <Contributor
               name='Ethan Maher'
               imageSource='/img/ethan.jpg'
-              githubName='randompwner'
+              githubName='deepspacerailgun'
               linkedinName='ethan-maher'
               email='ethanamaher@gmail.com'
-              website = 'https://randompwner.github.io'
+              website = 'https://deepspacerailgun.github.io'
             />
           </div>
 
