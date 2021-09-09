@@ -149,7 +149,7 @@ const Map = () => {
         </div>
       )}
       <div className="legend">
-          <p>Please Click on a Country With a Darker Color to Get Started</p>
+          <p>Please click on a shaded country to get started</p>
           <div style={{ "--color": COLOR_0_FALSE }}>Southwest Asia & Northern Africa</div>
           <div style={{ "--color": COLOR_1_FALSE }}>Sub-Saharan Africa & Australia</div>
           <div style={{ "--color": COLOR_2_FALSE }}>East & Southeast Asia</div>
