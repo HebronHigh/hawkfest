@@ -1,11 +1,11 @@
-import './../styles/InfoLink.css'
+import "./../styles/InfoLink.css";
 
 /**
  * import icons to use with this
  *
  * https://github.com/ismamz/react-bootstrap-icons/tree/master/src/icons
  */
-import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
+import { Github, Instagram, Linkedin, Globe2 } from "react-bootstrap-icons";
 
 /**
  * InfoLink functional component for the Credit Page
@@ -19,59 +19,63 @@ import { Github, Instagram, Linkedin, Globe2 } from 'react-bootstrap-icons'
  * @author Ethan Maher
  */
 const InfoLink = (props) => {
-  if (typeof (props.user) !== 'undefined') {
+  if (typeof props.user !== "undefined") {
     /**
      * checks if the proptype is a github username
      *
      * if so it will create a link to that github page
      */
-    if (props.type === 'github') {
-      const link = 'https://github.com/' + props.user;
+    if (props.type === "github") {
       return (
-        <a href={link} target='_blank' rel='noreferrer'>
-          <Github width='4vmin' size={30} />
+        <a
+          href={"https://github.com/" + props.user}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Github width="4vmin" size={30} />
         </a>
-      )
-    }
-    /**
-     * checks if the proptype is a linkedin username
-     *
-     * if so it will create a link to that linkedin page
-     */
-    else if (props.type === 'linkedin') {
-      const link = 'https://www.linkedin.com/in/' + props.user;
+      );
+    } else if (props.type === "linkedin") {
+      /**
+       * checks if the proptype is a linkedin username
+       *
+       * if so it will create a link to that linkedin page
+       */
       return (
-        <a href={link} target='_blank' rel='noreferrer'>
-          <Linkedin width='4vmin' size={30} />
+        <a
+          href={"https://www.linkedin.com/in/" + props.user}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Linkedin width="4vmin" size={30} />
         </a>
-      )
-    }
-    /**
-     * checks if the proptype is a website
-     *
-     * if so it will create a link to that webpage
-     */
-    else if (props.type === 'website') {
-      const link = props.user;
-
+      );
+    } else if (props.type === "website") {
+      /**
+       * checks if the proptype is a website
+       *
+       * if so it will create a link to that webpage
+       */
       return (
-        <a href={link} target='_blank' rel='noreferrer'>
-          <Globe2 width='4vmin' size={30} />
+        <a href={props.user} target="_blank" rel="noreferrer">
+          <Globe2 width="4vmin" size={30} />
         </a>
-      )
-    }
-    /**
-     * checks if the proptype is an instagram username
-     *
-     * if so it will create a link to that instagram page
-     */
-    else if (props.type === 'instagram') {
-      const link = 'https://www.instagram.com/' + props.user;
+      );
+    } else if (props.type === "instagram") {
+      /**
+       * checks if the proptype is an instagram username
+       *
+       * if so it will create a link to that instagram page
+       */
       return (
-        <a href={link} target='_blank' rel='noreferrer'>
-          <Instagram width='4vmin' size={30} />
+        <a
+          href={"https://www.instagram.com/" + props.user}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram width="4vmin" size={30} />
         </a>
-      )
+      );
     }
 
     /**
@@ -80,6 +84,6 @@ const InfoLink = (props) => {
   } else {
     return null;
   }
-}
+};
 
 export default InfoLink;
