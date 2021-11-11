@@ -20,11 +20,11 @@ import data from "./../data/countries.json";
  * Color values for each region
  */
 const colors = [
-  { false: "#ffff00", true: "#777700" },
-  { false: "#ff0000", true: "#770000" },
-  { false: "#00ff00", true: "#007700" },
-  { false: "#00ffff", true: "#007777" },
-  { false: "#0000ff", true: "#000077" },
+  { false: "#ffff00", true: "#777700" }, // region 0
+  { false: "#ff0000", true: "#770000" }, // region 1
+  { false: "#00ff00", true: "#007700" }, // region 2
+  { false: "#00ffff", true: "#007777" }, // region 3
+  { false: "#0000ff", true: "#000077" }, // region 4
 ];
 
 /**
@@ -37,30 +37,11 @@ const colors = [
  */
 function getColors(feature) {
   const regionNumber = feature.properties.REGION;
-  switch (regionNumber) {
-    case 0:
-      return feature.properties.HASDATA === 1
-        ? colors[0].true
-        : colors[0].false;
-    case 1:
-      return feature.properties.HASDATA === 1
-        ? colors[1].true
-        : colors[1].false;
-    case 2:
-      return feature.properties.HASDATA === 1
-        ? colors[2].true
-        : colors[2].false;
-    case 3:
-      return feature.properties.HASDATA === 1
-        ? colors[3].true
-        : colors[3].false;
-    case 4:
-      return feature.properties.HASDATA === 1
-        ? colors[4].true
-        : colors[4].false;
-    default:
-      return "black";
-  }
+  if (regionNumber >= 0 && regionNumber <= 4)
+    return feature.properties.HASDATA === 1
+      ? colors[regionNumber].true
+      : colors[regionNumber].false;
+  else return "black";
 }
 
 /**
