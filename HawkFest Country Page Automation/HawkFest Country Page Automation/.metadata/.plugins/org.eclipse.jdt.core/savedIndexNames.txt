@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Users\punch\Desktop\HawkFest Country Page Automation\HawkFest Country Page Automation\.metadata\.plugins\org.eclipse.jdt.core
+2196199803.index
+1885623897.index
